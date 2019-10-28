@@ -3,7 +3,7 @@ package com.company;
 public class Storage {
     private int AmountOfHumans = 10;
     private int LastFree;
-    Person[] Humans;
+    private Person[] Humans;
 
     /** Construct Method "Storage".
      * Initializes Object of class "Storage".
@@ -14,12 +14,12 @@ public class Storage {
         LastFree = 0;
     }
 
-    /**Method "AddHuman"
+    /**Method "addHuman"
      * Adds object of Person to massive of Person.
      * If the number of new element larger than massive size, then it creates new massive with increased size.
      * @param Human object of Person that should be added to massive.
      */
-    public void AddHuman(Person Human) {
+    public void addHuman(Person Human) {
         if (LastFree < AmountOfHumans){
             Humans[LastFree] = Human;
             LastFree++;
@@ -42,11 +42,26 @@ public class Storage {
      * @param n number of Person that should be found.
      * @return returns object of Person.
      */
-    public Person GetHumanOfNumber(int n){
+    public Person getHumanOfNumber(int n){
         if (n >= AmountOfHumans)
             return Humans[AmountOfHumans - 1];
         else {
             return Humans[n];
         }
+    }
+    /** Method "showAllHumans"
+     * Shows all human in the massive.
+     */
+    public void showAllHumans(){
+        for (int i = 0; i < AmountOfHumans; ++i){
+
+        }
+    }
+
+    /** showAllHumansSortByFIO
+     * Shows all humans in massive with sorting with field "FIO".
+     */
+    public void showAllHumansSortByFIO(){
+
     }
 }

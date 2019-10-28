@@ -12,7 +12,7 @@ public class Main {
         Storage Store = new Storage();
         for (int i = 0; i < 12; ++i) {
             Person Human = new Person();
-            Store.AddHuman(Human);
+            Store.addHuman(Human);
         }
         //System.out.println(Store.GetHumanOfNumber(11).getAge());
     }
