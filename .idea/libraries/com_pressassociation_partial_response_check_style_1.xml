@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.pressassociation.partial-response:check-style:1" type="repository">
+    <properties maven-id="com.pressassociation.partial-response:check-style:1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/check-style-1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
